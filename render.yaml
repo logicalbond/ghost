@@ -22,7 +22,7 @@ services:
     - key: database__connection__password
       fromService:
         type: pserv
-        name: mysql
+        name: kozmik-blog-db
         envVarKey: MYSQL_PASSWORD
 
 - type: pserv
