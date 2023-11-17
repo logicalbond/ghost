@@ -13,7 +13,7 @@ services:
     - key: database__connection__host
       fromService:
         type: pserv
-        name: mysql
+        name: kozmik-blog-db
         property: host
     - key: database__connection__database
       value: ghostdb
