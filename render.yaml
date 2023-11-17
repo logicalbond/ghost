@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: ghost
+  name: kozmik-blog-us
   env: docker
   autoDeploy: false
   disk:
@@ -26,7 +26,7 @@ services:
         envVarKey: MYSQL_PASSWORD
 
 - type: pserv
-  name: mysql
+  name: kozmik-blog-db
   plan: starter
   env: docker
   repo: https://github.com/render-examples/mysql
