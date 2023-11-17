@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: kozmik-blog-us
+  name: kozmik-blog
   env: docker
   autoDeploy: false
   disk:
