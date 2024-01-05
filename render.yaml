@@ -1,11 +1,11 @@
 services:
 - type: web
-  name: kozmik-ghost
+  name: kozmik-blog
   env: docker
   autoDeploy: false
   disk:
-    name: kozmik-ghost
-    mountPath: /var/lib/ghost
+    name: kozmik-blog
+    mountPath: /var/lib/ghost/content
     sizeGB: 10 #Feel free to change this to suit your needs.
   envVars:
     - key: url
