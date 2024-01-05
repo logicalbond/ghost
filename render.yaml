@@ -5,9 +5,11 @@ services:
   autoDeploy: false
   disk:
     name: ghost
-    mountPath: /var/lib/ghost/content
+    mountPath: /var/lib/ghost
     sizeGB: 10 #Feel free to change this to suit your needs.
   envVars:
+    - key: url
+      value: https://blog.kozmik.io
     - key: database__client
       value: mysql
     - key: database__connection__host
