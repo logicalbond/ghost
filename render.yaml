@@ -4,8 +4,8 @@ services:
   env: docker
   autoDeploy: false
   disk:
-    name: kozmik-blog
-    mountPath: /var/lib/ghost/content
+    name: kozmik-blog-disk
+    mountPath: /var/lib/ghost
     sizeGB: 10 #Feel free to change this to suit your needs.
   envVars:
     - key: url
